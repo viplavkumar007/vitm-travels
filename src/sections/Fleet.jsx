@@ -33,7 +33,9 @@ export default function Fleet() {
                     src={v.image}
                     alt={v.alt}
                     className="h-44 w-full"
-                    imgClassName="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    imgClassName={`h-44 w-full transition-transform duration-500 group-hover:scale-105 ${
+                      v.imageFit === 'contain' ? 'object-contain bg-white p-2' : 'object-cover'
+                    }`}
                   />
                   <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-charcoal-900/80 px-3 py-1 text-xs font-bold text-white backdrop-blur">
                     <Users className="h-3.5 w-3.5" />

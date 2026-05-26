@@ -4,6 +4,18 @@
 // ============================================================================
 
 import logo from '../assets/logo.jpeg';
+import innovaCrysta from '../assets/innova-crysta-exterior-right-front-three-quarter-2.webp';
+import swiftDzire from '../assets/swift-dzire-kashmir-car-rental-1-1-768x508.webp';
+import cretaImage from '../assets/creta.jpeg';
+import ootyCard from '../assets/ooty-card.png';
+import mahabalipuramCard from '../assets/mahabalipuram-card.png';
+import heroTopRight from '../assets/hero-top-right.jpg';
+import yercaudCard from '../assets/yercaud-card.png';
+import heroBottomLeft from '../assets/hero-bottom-left.avif';
+import kodaikanalCard from '../assets/kodaikanal-card.avif';
+import rameswaramCard from '../assets/rameswaram-card.avif';
+import kanyakumariCard from '../assets/kanyakumari-card.avif';
+import maduraiCard from '../assets/madurai-card.avif';
 
 export const brand = {
   name: 'Vitm Shanmuga Travels',
@@ -50,11 +62,11 @@ export const hero = {
   // Lazy-loaded Unsplash imagery (replace with your own commercial photos)
   collage: [
     {
-      src: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=900&q=70',
-      alt: 'Misty Nilgiri hills near Ooty, Tamil Nadu',
+      src: heroTopRight,
+      alt: 'South Indian temple street view at dusk',
     },
     {
-      src: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=70',
+      src: heroBottomLeft,
       alt: 'Scenic hill station lake with boats',
     },
     {
@@ -89,7 +101,7 @@ export const services = [
     title: 'Ooty Tour Package',
     desc: 'Explore tea gardens, botanical gardens, scenic viewpoints, lakes, and the beautiful Nilgiri hills.',
     accent: 'ocean',
-    image: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=800&q=70',
+    image: ootyCard,
     alt: 'Tea gardens in the Nilgiri hills, Ooty',
   },
   {
@@ -97,7 +109,7 @@ export const services = [
     title: 'Kodaikanal Tour Package',
     desc: 'Enjoy mist-covered mountains, Kodai Lake, pine forests, waterfalls, and peaceful hill-station vibes.',
     accent: 'sunset',
-    image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=70',
+    image: kodaikanalCard,
     alt: 'Misty lake surrounded by pine forest in Kodaikanal',
   },
   {
@@ -105,7 +117,7 @@ export const services = [
     title: 'Rameswaram Pilgrimage Tour',
     desc: 'Visit Ramanathaswamy Temple, Dhanushkodi, the Pamban Bridge, and important spiritual landmarks.',
     accent: 'gold',
-    image: 'https://images.unsplash.com/photo-1609920658906-8223bd289001?auto=format&fit=crop&w=800&q=70',
+    image: rameswaramCard,
     alt: 'Pamban bridge over the sea near Rameswaram',
   },
   {
@@ -113,7 +125,7 @@ export const services = [
     title: 'Kanyakumari Tour Package',
     desc: 'Experience breathtaking sunrise and sunset views, Vivekananda Rock Memorial, and coastal attractions.',
     accent: 'ocean',
-    image: 'https://images.unsplash.com/photo-1623861397259-c5be1f2d9c44?auto=format&fit=crop&w=800&q=70',
+    image: kanyakumariCard,
     alt: 'Coastal sunrise over the sea at Kanyakumari',
   },
   {
@@ -121,7 +133,7 @@ export const services = [
     title: 'Madurai Heritage Tour',
     desc: 'Discover the Meenakshi Amman Temple, cultural landmarks, and centuries of historical attractions.',
     accent: 'sunset',
-    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=70',
+    image: maduraiCard,
     alt: 'Colourful gopuram of a South Indian temple',
   },
   {
@@ -129,7 +141,7 @@ export const services = [
     title: 'Yercaud Hill Station Tour',
     desc: 'A perfect weekend getaway with lakes, viewpoints, pleasant weather, and beautiful gardens.',
     accent: 'gold',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=70',
+    image: yercaudCard,
     alt: 'Green rolling hills and viewpoint at a hill station',
   },
   {
@@ -137,7 +149,7 @@ export const services = [
     title: 'Mahabalipuram Beach Tour',
     desc: 'Explore UNESCO heritage monuments, the Shore Temple, beaches, and historic architecture.',
     accent: 'ocean',
-    image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=70',
+    image: mahabalipuramCard,
     alt: 'Ancient shore temple by the sea',
   },
   {
@@ -145,7 +157,7 @@ export const services = [
     title: 'All Outstation Travel Services',
     desc: 'Travel comfortably to Bangalore, Mysore, Hyderabad, Tirupati, Chennai, Pondicherry, Munnar, Wayanad, Kochi, Alleppey, Coorg and any destination across South India.',
     accent: 'sunset',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=70',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80',
     alt: 'Highway leading toward distant mountains',
   },
 ];
@@ -161,9 +173,10 @@ export const fleet = {
       examples: ['Maruti Suzuki Swift', 'Hyundai Grand i10 Nios', 'Tata Tiago'],
       desc: 'Affordable and fuel-efficient vehicles ideal for local travel, city rides, airport transfers, and short-distance journeys.',
       features: ['Air Conditioned', 'Budget Friendly', 'Comfortable Seating', 'City Travel Specialist'],
-      image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=70',
+      image: cretaImage,
       alt: 'Compact hatchback car',
       seats: '4',
+      imageFit: 'contain',
     },
     {
       id: 'sedan',
@@ -171,9 +184,10 @@ export const fleet = {
       examples: ['Maruti Suzuki Dzire', 'Hyundai Aura', 'Honda Amaze'],
       desc: 'Perfect for business travel, family trips, airport transfers, and comfortable long-distance journeys.',
       features: ['Spacious Interior', 'Premium Comfort', 'Large Luggage Space', 'Smooth Highway Travel'],
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=70',
+      image: swiftDzire,
       alt: 'Sedan car on the road',
       seats: '5',
+      imageFit: 'contain',
     },
     {
       id: 'suv',
@@ -181,9 +195,10 @@ export const fleet = {
       examples: ['Toyota Innova Crysta', 'Mahindra Scorpio N', 'Kia Carens', 'Toyota Fortuner'],
       desc: 'Ideal for family vacations, pilgrimage tours, hill station trips, and premium outstation travel.',
       features: ['Premium Comfort', 'Spacious Cabin', 'Extra Luggage Capacity', 'Long Distance Travel'],
-      image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=70',
+      image: innovaCrysta,
       alt: 'Premium SUV vehicle',
       seats: '7',
+      imageFit: 'contain',
     },
     {
       id: 'traveller',
@@ -191,7 +206,7 @@ export const fleet = {
       examples: [],
       desc: 'Perfect for family gatherings, pilgrimage groups, corporate outings, and educational trips.',
       features: ['Pushback Seats', 'Air Conditioned', 'Spacious Interiors', 'Group Travel Friendly'],
-      image: 'https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&w=800&q=70',
+      image: 'https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&w=1200&q=80',
       alt: 'Mini van for group travel',
       seats: '14',
     },
@@ -201,7 +216,7 @@ export const fleet = {
       examples: [],
       desc: 'Best choice for wedding transportation, corporate events, educational tours, and large family groups.',
       features: ['Premium Seating', 'Comfortable Long-Distance Travel', 'Large Luggage Storage', 'Professional Driver Service'],
-      image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=70',
+      image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80',
       alt: 'Luxury coach bus',
       seats: '20',
     },
@@ -211,7 +226,7 @@ export const fleet = {
       examples: [],
       desc: 'Suitable for school excursions, pilgrimage tours, corporate travel, wedding transportation, and large group tours.',
       features: ['Spacious Seating', 'Large Storage Capacity', 'Comfortable Travel', 'Safe Group Transportation'],
-      image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=70',
+      image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
       alt: 'Large tourist bus',
       seats: '35+',
     },
@@ -309,3 +324,15 @@ export const ctaStrip = {
   primary: 'Get Free Quote',
   secondary: 'WhatsApp Us',
 };
+
+
+
+
+
+
+
+
+
+
+
+

@@ -81,8 +81,8 @@ export default function Hero() {
             <LazyImage
               src={hero.collage[0].src}
               alt={hero.collage[0].alt}
-              className="col-span-2 h-56 rounded-3xl shadow-card-hover ring-1 ring-white/60 sm:h-64"
-              imgClassName="h-full w-full object-cover"
+              className="col-span-2 rounded-3xl shadow-card-hover ring-1 ring-white/60"
+              imgClassName="block h-auto w-full bg-white"
             />
             <LazyImage
               src={hero.collage[1].src}

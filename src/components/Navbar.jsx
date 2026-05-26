@@ -25,6 +25,17 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
+  const scrollToSection = (href) => {
+    const id = href.replace('#', '');
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    const headerOffset = 78;
+    const y = section.getBoundingClientRect().top + window.scrollY - headerOffset;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+    window.history.replaceState(null, '', href);
+  };
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -106,7 +117,12 @@ export default function Navbar() {
                   <li key={item.href}>
                     <a
                       href={item.href}
-                      onClick={() => setOpen(false)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setOpen(false);
+                        // Wait for menu close + body scroll unlock on mobile, then scroll.
+                        window.setTimeout(() => scrollToSection(item.href), 40);
+                      }}
                       className={`block rounded-xl px-4 py-3 text-base font-semibold transition ${
                         active === id
                           ? 'bg-gold-50 text-gold-700'
