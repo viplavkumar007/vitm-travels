@@ -11,6 +11,7 @@ import ootyCard from '../assets/ooty-card.png';
 import mahabalipuramCard from '../assets/mahabalipuram-card.png';
 import heroTopRight from '../assets/hero-top-right.jpg';
 import yercaudCard from '../assets/yercaud-card.png';
+import aboutAdiyogi from '../assets/about-adiyogi.jpeg';
 import heroBottomLeft from '../assets/hero-bottom-left.avif';
 import kodaikanalCard from '../assets/kodaikanal-card.avif';
 import rameswaramCard from '../assets/rameswaram-card.avif';
@@ -83,8 +84,8 @@ export const about = {
     'Our mission is to provide safe, comfortable, affordable, and memorable travel experiences with well-maintained vehicles and experienced drivers.',
   ],
   image: {
-    src: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1100&q=70',
-    alt: 'Open scenic highway winding through hills',
+    src: aboutAdiyogi,
+    alt: 'Adiyogi Shiva statue in Coimbatore with surrounding hills',
   },
   pillars: [
     { title: 'Safety First', text: 'Sanitized, well-maintained vehicles and licensed, verified drivers on every trip.' },
@@ -324,6 +325,7 @@ export const ctaStrip = {
   primary: 'Get Free Quote',
   secondary: 'WhatsApp Us',
 };
+
 
 
 
